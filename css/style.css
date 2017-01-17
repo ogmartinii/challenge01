@@ -1,0 +1,192 @@
+body {
+    width: 62em;
+    margin: 0 auto;
+    background-color: #E3E6DA;
+    box-sizing: border-box;
+} 
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 9em;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #C0CEB2;
+    text-shadow: 5px 5px 2px #8AA989; 
+}
+a {
+    text-decoration: none;
+}
+a h1:visited {
+    color: inerit;
+    
+}
+a h1:hover {
+    color: inerit;
+    
+}
+a h1:active {
+    color: inerit;
+    
+}
+h4 {
+    padding-left: 1em;
+}
+.rating{
+  width:320px;
+  margin:0 auto;
+  float: left;
+  padding-left: 1em;
+  
+}
+.rating-bar{
+  background:black;
+  padding:3px;
+}
+.rating-bar span{
+  display:block;
+  height:15px;
+}
+.rating-bar, .rating-bar span {
+  border-radius:4px; 
+}
+
+/* Used to color the bars */
+.blue{ background:#253628; }
+.red{ background:red; }
+
+/* .rate-n, n being the rating from 1 to 10 */
+.rate-1{ width:10%; }
+.rate-2{ width:20%; }
+.rate-3{ width:30%; }
+.rate-4{ width:40%; }
+.rate-5{ width:50%; }
+.rate-6{ width:60%; }
+.rate-7{ width:70%; }
+.rate-8{ width:80%; }
+.rate-9{ width:90%; }
+.rate-10{ width:100%; }
+
+/* CSS3 Animation */
+.animate{
+  animation: progress 2s linear;
+  -moz-animation: progress 2s linear;
+  -webkit-animation: progress 2s linear;
+  -ms-animation: progress 2s linear;
+  -o-animation: progress 2s linear;
+}
+/* Span fills 100% of parent div (.rate-n) which may be 10-100% of the width of black bar (.rating) */
+@-webkit-keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}
+@-moz-keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}
+@-ms-keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}
+@-o-keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}
+@keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}
+.small_name {
+    font-size: 5em;
+    text-align: left;
+}
+h2 {
+    display: flex;
+    font-family: 'Bangers';
+    color: #C0CEB2;
+    letter-spacing: 0.5px;
+    font-family: 'Adamina', serif;
+    padding: 1em;
+    margin: 0px;
+}
+h3 {
+    font-family: 'Adamina', serif;
+    padding: 1em;
+}
+
+p {
+    font-family: 'Adamina', serif;
+    border-left: 2px solid #C0CEB2;
+    margin-left: 1em;
+    padding: 1em;
+    padding-top: 0em;
+}
+.poster.arno {
+    padding-left: 1em;
+}
+.poster.felicity {
+    padding-left: 2em;
+    margin-top: 5em;
+}
+.content {
+display: flex;
+justify-content: space-between;
+}
+.news {
+    margin-right: 1em;
+    background-color: #8AA989;
+    width: 70%;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 5px 5px 2px #C0CEB2;
+}
+.poster {
+    float:left;
+    padding: 1em;
+    padding-top: 0em;
+    
+}
+.news .poster {
+    padding-top: 1em;
+}
+.poster.arno {
+    float: right;
+}    
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.wrapper {
+    display: flex;
+    /*margin-left: 0.5em;*/
+    background-color: #8AA989;
+    border-radius: 25px;
+    flex-flow: column;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 5px 5px 2px #C0CEB2;
+    justify-content: center;
+}
+.movie {
+    padding: 1em;
+    align-items: center;
+        
+}
+.actor {
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+}
+.list {
+    font-family: 'Adamina', serif;
+}
+.list a {
+    text-decoration: underline;
+    color: inherit;
+}   
+footer {
+    margin-top: 20px;
+    height: 30px;
+    background-color: grey;
+    text-align: center;
+}
